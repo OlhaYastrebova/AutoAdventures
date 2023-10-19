@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "//github.com/OlhaYastrebova/AutoAdventures/static/css/main.7acaea2f.css",
-    "main.js": "//github.com/OlhaYastrebova/AutoAdventures/static/js/main.07d3183d.js",
-    "index.html": "//github.com/OlhaYastrebova/AutoAdventures/index.html",
-    "main.7acaea2f.css.map": "//github.com/OlhaYastrebova/AutoAdventures/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "//github.com/OlhaYastrebova/AutoAdventures/static/js/main.07d3183d.js.map"
+    "main.js": "/OlhaYastrebova/AutoAdventures/static/js/main.4ffdb748.js",
+    "static/js/474.0ba7be97.chunk.js": "/OlhaYastrebova/AutoAdventures/static/js/474.0ba7be97.chunk.js",
+    "static/js/254.d444dc08.chunk.js": "/OlhaYastrebova/AutoAdventures/static/js/254.d444dc08.chunk.js",
+    "static/js/830.50e94358.chunk.js": "/OlhaYastrebova/AutoAdventures/static/js/830.50e94358.chunk.js",
+    "static/js/903.bf14658f.chunk.js": "/OlhaYastrebova/AutoAdventures/static/js/903.bf14658f.chunk.js",
+    "static/media/ImgBg.jpg": "/OlhaYastrebova/AutoAdventures/static/media/ImgBg.916716ac02b7c5ea4974.jpg",
+    "index.html": "/OlhaYastrebova/AutoAdventures/index.html",
+    "static/media/favorite.svg": "/OlhaYastrebova/AutoAdventures/static/media/favorite.cabefc1b6ea2aa752ae3b6b6c254961f.svg",
+    "static/media/active-favorite.svg": "/OlhaYastrebova/AutoAdventures/static/media/active-favorite.a325fa56217e89200e8a19b9ed976151.svg",
+    "static/media/line.svg": "/OlhaYastrebova/AutoAdventures/static/media/line.6fd0076f590e2f6c66685988f62df23e.svg",
+    "main.4ffdb748.js.map": "/OlhaYastrebova/AutoAdventures/static/js/main.4ffdb748.js.map",
+    "474.0ba7be97.chunk.js.map": "/OlhaYastrebova/AutoAdventures/static/js/474.0ba7be97.chunk.js.map",
+    "254.d444dc08.chunk.js.map": "/OlhaYastrebova/AutoAdventures/static/js/254.d444dc08.chunk.js.map",
+    "830.50e94358.chunk.js.map": "/OlhaYastrebova/AutoAdventures/static/js/830.50e94358.chunk.js.map",
+    "903.bf14658f.chunk.js.map": "/OlhaYastrebova/AutoAdventures/static/js/903.bf14658f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.4ffdb748.js"
   ]
 }
