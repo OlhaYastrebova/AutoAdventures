@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Header, LogoImg, Wrapper, StyledNavLink } from './HeaderBar.styled';
+import { Container, Header, Wrapper, StyledNavLink } from './HeaderBar.styled';
 // import Logo from '../../images/logo.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export const HeaderBar = () => {
   return (

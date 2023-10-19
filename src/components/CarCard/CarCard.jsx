@@ -51,10 +51,10 @@ export const CarCard = ({ car }) => {
   };
 
   
-  const closeModal = () => {
-    setIsOpenedModal(false);
-    body.style.overflow = 'scroll';
-  };
+//   const closeModal = () => {
+//     setIsOpenedModal(false);
+//     body.style.overflow = 'scroll';
+//   };
 
   return (
     <>
