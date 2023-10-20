@@ -1,105 +1,69 @@
-# React homework template
+# Car Rental App
 
-This project was created with
-[Create React App](https://github.com/facebook/create-react-app). To get
-acquainted and configure additional features
-[refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Task Description
 
-## Creating a repository by template
+Create an application for a company that provides car rental services in Ukraine. The application consists of 3 pages:
 
-Use this GoIT repository as a template for creating a repository
-of your project. To use it just tap the `«Use this template»` button and choose
-`«Create a new repository»` option, as you can see on the image below.
+1. **Home Page**: It should provide a general description of the services offered by the company. The styling and design are at your discretion.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+2. **Catalog Page**: This page should contain a catalog of cars with different specifications. Users should be able to filter cars by brand, hourly rental price, and mileage.
 
-The page for creating a new repository will open on the next step. Fill out
-the Name field and make sure the repository is public, then click
-`«Create repository from template»` button.
+3. **Favorites Page**: This page should display advertisements that the user has added to their favorites.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+## Technical Requirements
 
-You now have a personal project repository, having a repository-template file 
-and folder structure. After that, you can work with it as you would with any 
-other private repository: clone it on your computer, write code, commit, and 
-send it to GitHub.
+- Implement the rental card according to the layout.
+- The first catalog page should render 8 advertisements, and the rest should load on clicking the "Load more" button.
+- Clicking the heart-shaped button on an advertisement card should add it to the favorites list and change the button color.
+- When refreshing the page, the user's actions should persist. This means if an advertisement is added to favorites and the page is refreshed, the button should remain in the "favorite advertisement" state with the corresponding color.
+- Clicking the heart-shaped button again should remove the advertisement from the favorites list and change the button color back to its initial state.
+- Clicking the "Learn more" button should open a modal window with detailed information about the car and its rental conditions.
+- The modal window should close when clicking the close button ("x"), clicking the backdrop, or pressing the Esc key.
+- The car mileage in the code should be specified as a single value (e.g., 4500). In the UI, it should be displayed with commas (4,500).
+- Implement the "Rental car" button as a link that allows the user to contact the company via phone number +380730000000.
 
-## Preparing for coding
+## Routing
 
-1. Make sure you have an LTS version of Node.js installed on your computer.
-   [Download and install](https://nodejs.org/en/) if needed.
-2. Install the project's base dependencies with the `npm install` command.
-3. Start development mode by running the `npm start` command.
-4. Go to [http://localhost:3000](http://localhost:3000) in your browser. This
-   page will automatically reload after saving changes to the project files.
+Implement routing using React Router. The application should have the following routes:
 
-## Deploy
+- `/`: Home page with a general description of the company's services.
+- `/catalog`: Page containing a catalog of cars with different specifications.
+- `/favorites`: Page displaying advertisements that the user has added to their favorites.
 
-The production version of the project will automatically be linted, built, and
-deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
-is updated. For example, after a direct push or an accepted pull request. To do
-this, you need to edit the `homepage` field in the `package.json` file,
-replacing `your_username` and `your_repo_name` with your own, and submit the
-changes to GitHub.
+If a user visits a non-existent route, they should be redirected to the home page.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+## Additional Task
 
-Next, you need to go to the settings of the GitHub repository (`Settings` >
-`Pages`) and set the distribution of the production version of files from the
-`/root` folder of the `gh-pages` branch, if this was not done automatically.
+Add filtering:
 
-![GitHub Pages settings](./assets/repo-settings.png)
+- Dropdown with car brands from `makes.json` - display advertisements with cars of the corresponding brand.
+- Dropdown with hourly rental prices (in increments of $10) - display advertisements with cars whose rental price falls within the user-selected price range.
+- Group of inputs to determine the mileage range within which the user will search for advertisements.
 
-### Deployment status
+## Frontend
 
-The deployment status of the latest commit is displayed with an icon next to its
-ID.
+1. Make a copy of this project.
+2. Don't forget in properties allow git-hub-actions.
+3. Clone the project to your computer
+4. Install all dependencies with: `npm i`
+5. Change project name and username in package.json in fields "name" and
+   "homepage"
+6. in index.js write the correct basename="/car-rent" of your project with /
+   (slash)
+7. Pull your changes to GitHub
+8. For deploying, you can use gh-pages.
+9. To start your project, use the command: `npm start`
 
-- **Yellow color** - the project is being built and deployed.
-- **Green color** - deployment completed successfully.
-- **Red color** - an error occurred during linting, build or deployment.
+## Backend
 
-More detailed information about the status can be viewed by clicking on the
-icon, and in the drop-down window, follow the link `Details`.
+Create your own backend for development using the UI service [mockapi.io](https://mockapi.io/). Create a resource named `adverts`. Describe the advertisement object as outlined below.
 
-![Deployment status](./assets/deploy-status.png)
+### Advert
 
-### Live page
+Create an advertisement in Mockapi with the following fields: `id`, `year`, `make`, `model`, `type`, `img`, `description`, `fuelConsumption`, `engineSize`, `accessories`, `functionalities`, `rentalPrice`, `rentalCompany`, `address`, `rentalConditions`, `mileage` (see screenshot below). You can use the `adverts.json` file for populating the collection.
 
-After some time, usually a couple of minutes, the live page can be viewed at the
-address specified in the edited `homepage` property. For example, here is a link
-to a live version for this repository
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
+![Insert screenshot here](./images/screenshot-adverts.png)
 
-If a blank page opens, make sure there are no errors in the `Console` tab
-related to incorrect paths to the CSS and JS files of the project (**404**). You
-most likely have the wrong value for the `homepage` property in the
-`package.json` file.
+You can select the car images on your own.
 
-### Routing
-
-If your application uses the `react-router-dom` library for routing, you must
-additionally configure the `<BrowserRouter>` component by passing the exact name
-of your repository in the `basename` prop. Slashes at the beginning and end of
-the line are required.
-
-```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
-```
-
-## How it works
-
-![How it works](./assets/how-it-works.png)
-
-1. After each push to the `main` branch of the GitHub repository, a special
-   script (GitHub Action) is launched from the `.github/workflows/deploy.yml`
-   file.
-2. All repository files are copied to the server, where the project is
-   initialized and linted and built before deployment.
-3. If all steps are successful, the built production version of the project
-   files is sent to the `gh-pages` branch. Otherwise, the script execution log
-   will indicate what the problem is.
+The database should contain at least 32 advertisements with different values according to your discretion. Pagination should be implemented, with one pagination page containing 8 advertisements.
