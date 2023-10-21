@@ -9,6 +9,10 @@ import { GlobalStyles, theme } from './components/styles/index';
 import { App } from './components/App/index';
 import "./index.css";
 
+const modalRoot = document.createElement('div');
+modalRoot.id = 'modal-root';
+document.body.appendChild(modalRoot);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   
   <ThemeProvider theme={theme}>

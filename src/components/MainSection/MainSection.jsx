@@ -17,7 +17,7 @@ export const MainSection = () => {
   return (
     <>
       <Hero>
-        <Text>Travel worry-free and in comfort</Text>
+        <Text>Journey with Confidence and Comfort</Text>
         <Button onClick={handleNav}>Your Comfort Now</Button>
       </Hero>
     </>

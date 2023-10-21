@@ -23,7 +23,7 @@ import Line from '../../images/line.svg';
 import Favorite from '../../images/favorite.svg';
 import ActiveFavorite from '../../images/active-favorite.svg';
 
-// import { Modal } from 'components/Modal';
+import { Modal } from 'components/Modal';
 
 const body = document.querySelector('body');
 
@@ -40,32 +40,40 @@ export const CarCard = ({ car }) => {
   const [isOpenedModal, setIsOpenedModal] = useState(false);
 
   
-  const handleToggleModal = () => {
-    setIsOpenedModal(prevState => !prevState);
-    if (isOpenedModal === true) {
+//   const handleToggleModal = () => {
+//     setIsOpenedModal(prevState => !prevState);
+//     if (isOpenedModal === true) {
+//       body.style.overflow = 'scroll';
+//     }
+//     if (isOpenedModal === false) {
+//       body.style.overflow = 'hidden';
+//     }
+//   };
+
+const handleToggleModal = () => {
+    setIsOpenedModal(!isOpenedModal);
+    if (isOpenedModal) {
       body.style.overflow = 'scroll';
-    }
-    if (isOpenedModal === false) {
+    } else {
       body.style.overflow = 'hidden';
     }
   };
-
   
-//   const closeModal = () => {
-//     setIsOpenedModal(false);
-//     body.style.overflow = 'scroll';
-//   };
+  const closeModal = () => {
+    setIsOpenedModal(false);
+    body.style.overflow = 'scroll';
+  };
 
   return (
     <>
       
-      {/* {isOpenedModal && (
+      {isOpenedModal && (
         <Modal
           handleToggleModal={handleToggleModal}
           closeModal={closeModal}
           car={car}
         />
-      )} */}
+      )}
       <Container>
         <div>
           <Wrapper>
