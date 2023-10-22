@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/AutoAdventures/static/css/main.7d40bf6a.css",
-    "main.js": "/AutoAdventures/static/js/main.9f10895b.js",
+    "main.js": "/AutoAdventures/static/js/main.a8c8634f.js",
     "static/js/474.e4a8e37a.chunk.js": "/AutoAdventures/static/js/474.e4a8e37a.chunk.js",
-    "static/js/254.8f241ecb.chunk.js": "/AutoAdventures/static/js/254.8f241ecb.chunk.js",
-    "static/js/830.92b5915f.chunk.js": "/AutoAdventures/static/js/830.92b5915f.chunk.js",
+    "static/js/254.e5e85ac2.chunk.js": "/AutoAdventures/static/js/254.e5e85ac2.chunk.js",
+    "static/js/830.819bc012.chunk.js": "/AutoAdventures/static/js/830.819bc012.chunk.js",
     "static/js/903.0b10a083.chunk.js": "/AutoAdventures/static/js/903.0b10a083.chunk.js",
-    "static/js/37.650c578e.chunk.js": "/AutoAdventures/static/js/37.650c578e.chunk.js",
+    "static/js/37.6241489c.chunk.js": "/AutoAdventures/static/js/37.6241489c.chunk.js",
     "static/media/ImgBg.jpg": "/AutoAdventures/static/media/ImgBg.916716ac02b7c5ea4974.jpg",
     "index.html": "/AutoAdventures/index.html",
     "static/media/favorite.svg": "/AutoAdventures/static/media/favorite.cabefc1b6ea2aa752ae3b6b6c254961f.svg",
@@ -14,15 +14,15 @@
     "static/media/close.svg": "/AutoAdventures/static/media/close.0a08f205532d28892ca664e476f54b2e.svg",
     "static/media/line.svg": "/AutoAdventures/static/media/line.6fd0076f590e2f6c66685988f62df23e.svg",
     "main.7d40bf6a.css.map": "/AutoAdventures/static/css/main.7d40bf6a.css.map",
-    "main.9f10895b.js.map": "/AutoAdventures/static/js/main.9f10895b.js.map",
+    "main.a8c8634f.js.map": "/AutoAdventures/static/js/main.a8c8634f.js.map",
     "474.e4a8e37a.chunk.js.map": "/AutoAdventures/static/js/474.e4a8e37a.chunk.js.map",
-    "254.8f241ecb.chunk.js.map": "/AutoAdventures/static/js/254.8f241ecb.chunk.js.map",
-    "830.92b5915f.chunk.js.map": "/AutoAdventures/static/js/830.92b5915f.chunk.js.map",
+    "254.e5e85ac2.chunk.js.map": "/AutoAdventures/static/js/254.e5e85ac2.chunk.js.map",
+    "830.819bc012.chunk.js.map": "/AutoAdventures/static/js/830.819bc012.chunk.js.map",
     "903.0b10a083.chunk.js.map": "/AutoAdventures/static/js/903.0b10a083.chunk.js.map",
-    "37.650c578e.chunk.js.map": "/AutoAdventures/static/js/37.650c578e.chunk.js.map"
+    "37.6241489c.chunk.js.map": "/AutoAdventures/static/js/37.6241489c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d40bf6a.css",
-    "static/js/main.9f10895b.js"
+    "static/js/main.a8c8634f.js"
   ]
 }
