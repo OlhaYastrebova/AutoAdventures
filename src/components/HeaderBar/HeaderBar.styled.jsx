@@ -2,7 +2,13 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const Header = styled.header`
-  `;
+background-color: #3470ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+`;
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -11,8 +17,7 @@ export const Container = styled.div`
   padding: 20px 50px;
   display: flex;
   justify-content: space-around;
-  background-color: #3470ff;
-  @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding: 20px 95px;
   }
