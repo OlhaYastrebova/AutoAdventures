@@ -33,7 +33,7 @@ export const Hero = styled.div`
 
 export const Text = styled.h1`
   font-size: 44px;
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.accent};
   text-align: center;
   
 
