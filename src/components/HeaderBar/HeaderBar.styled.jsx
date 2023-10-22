@@ -8,7 +8,7 @@ background-color: #3470ff;
   left: 0;
   width: 100%;
   z-index: 1000;
-`;
+  `;
 
 export const Container = styled.div`
   margin: 0 auto;
