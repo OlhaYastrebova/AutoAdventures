@@ -39,17 +39,6 @@ export const CarCard = ({ car }) => {
   
   const [isOpenedModal, setIsOpenedModal] = useState(false);
 
-  
-//   const handleToggleModal = () => {
-//     setIsOpenedModal(prevState => !prevState);
-//     if (isOpenedModal === true) {
-//       body.style.overflow = 'scroll';
-//     }
-//     if (isOpenedModal === false) {
-//       body.style.overflow = 'hidden';
-//     }
-//   };
-
 const handleToggleModal = () => {
     setIsOpenedModal(!isOpenedModal);
     if (isOpenedModal) {

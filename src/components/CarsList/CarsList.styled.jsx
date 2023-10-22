@@ -8,7 +8,8 @@ export const Container = styled.div`
   display: flex;
   row-gap: 25px;
   flex-direction: column;
-  padding: 25px 50px;
+  justify-content: center;
+  
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -16,14 +17,11 @@ export const Container = styled.div`
     column-gap: 29px;
     flex-direction: row;
     flex-wrap: wrap;
-
-    padding: 25px 95px;
+    
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    padding: 50px 128px;
-
     row-gap: 50px;
     column-gap: 29px;
     flex-direction: row;

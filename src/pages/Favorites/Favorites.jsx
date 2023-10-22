@@ -4,7 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCars } from 'redux/cars/operations';
 import { Message } from 'components/Message';
 
+
 import { Loader } from 'components/Loader';
+import { Container } from 'layout/Layout.styled';
 
 export default function Favorites() {
 
@@ -23,11 +25,11 @@ export default function Favorites() {
   filterCars = cars.filter(car => favorites.includes(car.id));
 
   return (
-    <>
+    <Container>
       {isLoading && <Loader />}
       {filterCars.length !== 0 && <CarsList cars={filterCars} />}
 
       {filterCars.length === 0 && !isLoading && <Message title="No favorite cars" content="You haven't added any cars to your favorites yet." />}
-    </>
+    </Container>
   );
 };
