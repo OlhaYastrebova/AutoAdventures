@@ -26,7 +26,6 @@ export const Form = styled.form`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
   gap: 18px;
 `;
 

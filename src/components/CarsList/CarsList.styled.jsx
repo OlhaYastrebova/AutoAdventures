@@ -9,6 +9,7 @@ export const Container = styled.div`
   row-gap: 25px;
   flex-direction: column;
   justify-content: center;
+  padding: 25px 50px;
   
 
   @media screen and (min-width: 768px) {
@@ -17,7 +18,7 @@ export const Container = styled.div`
     column-gap: 29px;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    padding: 25px 95px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -26,6 +27,7 @@ export const Container = styled.div`
     column-gap: 29px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 50px 128px;
   }
 `;
 
