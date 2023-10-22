@@ -19,8 +19,8 @@ export const FooterBar = () => {
           Contact :
           <Wrapper>
             <FiPhoneCall size={16} />
-            <Contact href="tel:+380938888888">
-              +380 93 888 88 88
+            <Contact href="tel:+380730000000">
+              +380730000000
             </Contact>
           </Wrapper>
           <Wrapper>

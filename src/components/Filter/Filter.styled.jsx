@@ -1,12 +1,10 @@
 import styled from '@emotion/styled';
 
-
 export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 375px;
   margin-top: 50px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,23 +33,18 @@ export const Button = styled.button`
   height: 56px;
   align-self: flex-start;
   margin-top: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 12px;
   background-color: #3470ff;
-
   color: #ffffff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.42857;
-
   cursor: pointer;
-
   transition: background-color 250ms linear;
 
   &:hover {

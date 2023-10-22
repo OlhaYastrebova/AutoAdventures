@@ -40,8 +40,7 @@ export default function Catalog() {
       );
     }
 
-    
-    if (price !== '') {
+        if (price !== '') {
       const array = [...choiceCar];
       choiceCar = [...[]];
 
@@ -68,8 +67,7 @@ export default function Catalog() {
     setFilterCars(choiceCar);
   };
 
-  
-  let carsBrand = [];
+    let carsBrand = [];
 
   carsBrand = filterCars.filter(
     (element, index, array) => index < page * 8

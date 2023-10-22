@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
   position: relative;
   height: 268px;
   width: 274px;
-
   border-radius: 14px;
   background: linear-gradient(
       180deg,
@@ -20,9 +19,7 @@ export const Wrapper = styled.div`
       rgba(18, 20, 23, 0) 41.07%
     ),
     #f3f3f2;
-
   overflow: hidden;
-
   margin-bottom: 14px;
 `;
 
@@ -31,9 +28,7 @@ export const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-
   transition: transform 250ms linear;
-
   &:hover {
     transform: scale(1.1);
   }
@@ -44,7 +39,6 @@ export const FavoriteCar = styled(ReactSVG)`
   top: 14px;
   right: 14px;
   cursor: pointer;
-
   transition: transform 250ms linear;
 
   &:hover {
@@ -117,25 +111,19 @@ export const ButtonLearnMore = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   padding: 12px;
-
   border: none;
   border-radius: 12px;
   background-color: #3470ff;
-
   color: #ffffff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.42857;
-
   margin-top: 28px;
-
   cursor: pointer;
-
   transition: background-color 250ms linear, transform 250ms linear;
 
   &:hover {

@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-
 export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
@@ -11,7 +10,6 @@ export const Container = styled.div`
   justify-content: center;
   padding: 25px 50px;
   
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
     row-gap: 50px;

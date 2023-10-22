@@ -16,7 +16,6 @@ export const Container = styled.div`
   }
 `;
 
-
 export const Hero = styled.div`
   margin: 0 auto;
   height: 800px;
@@ -36,7 +35,6 @@ export const Text = styled.h1`
   color: ${props => props.theme.colors.accent};
   text-align: center;
   
-
   @media screen and (min-width: 768px) {
     font-size: 60px;
   }
@@ -44,8 +42,6 @@ export const Text = styled.h1`
   @media screen and (min-width: 1440px) {
     font-size: 80px;
   }
-
-  
 `;
 
 export const Button = styled.button`

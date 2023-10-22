@@ -9,7 +9,7 @@ import {
   Label,
   LabelFrom,
   LabelTo,
-  Wrapper
+  Wrapper,
 } from './Filter.styled';
 
 import brands from 'db/brands.json';
@@ -32,21 +32,28 @@ export const Filter = ({
   const handleChangeTo = e => {
     const choiceTo = e.target.value.replace(/,/g, '');
     setTo(choiceTo);
-    setFilterTo(choiceTo === '0' ? '' : new Intl.NumberFormat('en-US').format(choiceTo));
+    setFilterTo(
+      choiceTo === '0' ? '' : new Intl.NumberFormat('en-US').format(choiceTo)
+    );
   };
 
   const handleChangeFrom = e => {
     const choiceFrom = e.target.value.replace(/,/g, '');
     setFrom(choiceFrom);
-    setFilterFrom(choiceFrom === '0' ? '' : new Intl.NumberFormat('en-US').format(choiceFrom));
+    setFilterFrom(
+      choiceFrom === '0'
+        ? ''
+        : new Intl.NumberFormat('en-US').format(choiceFrom)
+    );
   };
 
   return (
     <>
       <Container>
         <Form>
-        <Label htmlFor="car-brand">Make your choice
-          <Select
+          <Label htmlFor="car-brand">
+            Make your choice
+            <Select
               id="car-brand"
               value={brand}
               onChange={e => setBrand(e.target.value)}
@@ -58,11 +65,11 @@ export const Filter = ({
                 </option>
               ))}
             </Select>
-        </Label>
-          
+          </Label>
 
-        <Label htmlFor="price">Price/1hour
-          <Select
+          <Label htmlFor="price">
+            Price/1hour
+            <Select
               id="price"
               value={price}
               onChange={e => setPrice(e.target.value)}
@@ -74,38 +81,35 @@ export const Filter = ({
                 </option>
               ))}
             </Select>
-        </Label>
-          
-        <Wrapper>
-        <LabelFrom htmlFor="from">From car mileage / km
-          <Input
-              id="from"
-              type="text"
-              value={filterFrom}
-              onChange={handleChangeFrom}
-              
-            />
-        </LabelFrom>
-          
+          </Label>
 
-        <LabelTo htmlFor="to">To car mileage / km
-          <Input
-              id="to"
-              type="text"
-              value={filterTo}
-              onChange={handleChangeTo}
-            />
-        </LabelTo>
-        </Wrapper>
-        
-          
+          <Wrapper>
+            <LabelFrom htmlFor="from">
+              From car mileage / km
+              <Input
+                id="from"
+                type="text"
+                value={filterFrom}
+                onChange={handleChangeFrom}
+              />
+            </LabelFrom>
 
-        <Button type="button" onClick={handleFilter}>
-          Search
-        </Button>
+            <LabelTo htmlFor="to">
+              To car mileage / km
+              <Input
+                id="to"
+                type="text"
+                value={filterTo}
+                onChange={handleChangeTo}
+              />
+            </LabelTo>
+          </Wrapper>
+
+          <Button type="button" onClick={handleFilter}>
+            Search
+          </Button>
         </Form>
       </Container>
-  
     </>
   );
 };

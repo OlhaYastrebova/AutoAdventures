@@ -9,7 +9,6 @@ export const Container = styled.div`
 
 export const MainContent = styled.div`
   flex-grow: 1;
-  
 `;
 
 export const Footer = styled.footer`

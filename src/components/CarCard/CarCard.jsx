@@ -28,7 +28,6 @@ import { Modal } from 'components/Modal';
 const body = document.querySelector('body');
 
 export const CarCard = ({ car }) => {
-  
   const adress = car.address.split(', ');
   const country = adress[adress.length - 1];
   const city = adress[adress.length - 2];
@@ -36,10 +35,9 @@ export const CarCard = ({ car }) => {
   const dispatch = useDispatch();
   const favorites = useSelector(state => state.favorites.items);
 
-  
   const [isOpenedModal, setIsOpenedModal] = useState(false);
 
-const handleToggleModal = () => {
+  const handleToggleModal = () => {
     setIsOpenedModal(!isOpenedModal);
     if (isOpenedModal) {
       body.style.overflow = 'scroll';
@@ -47,7 +45,7 @@ const handleToggleModal = () => {
       body.style.overflow = 'hidden';
     }
   };
-  
+
   const closeModal = () => {
     setIsOpenedModal(false);
     body.style.overflow = 'scroll';
@@ -55,7 +53,6 @@ const handleToggleModal = () => {
 
   return (
     <>
-      
       {isOpenedModal && (
         <Modal
           handleToggleModal={handleToggleModal}
@@ -73,7 +70,7 @@ const handleToggleModal = () => {
                 onClick={() => dispatch(toggleFavorite(car.id))}
               />
             )}
-            
+
             {favorites.includes(car.id) && (
               <FavoriteCar
                 src={ActiveFavorite}

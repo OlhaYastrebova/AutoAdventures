@@ -2,16 +2,13 @@ import styled from '@emotion/styled';
 
 export const Section = styled.div`
   background-color: #3470ff;
-  
 `;
 
 export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 375px;
-  
   padding: 20px 50px;
-
   display: flex;
   justify-content: center;
   gap: 20px;

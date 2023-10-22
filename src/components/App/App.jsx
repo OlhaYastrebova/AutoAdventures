@@ -6,11 +6,8 @@ const Home = lazy(() => import('pages/Home'));
 const Catalog = lazy(() => import('pages/Catalog'));
 const Favorites = lazy(() => import('pages/Favorites'));
 
-
 export const App = () => {
-
   return (
-    
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -19,6 +16,5 @@ export const App = () => {
         <Route path="*" element={<Home />} />
       </Route>
     </Routes>
-    
   );
 };

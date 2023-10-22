@@ -7,14 +7,13 @@ import { store, persistor } from './redux/store';
 import { Global, ThemeProvider } from '@emotion/react';
 import { GlobalStyles, theme } from './components/styles/index';
 import { App } from './components/App/index';
-import "./index.css";
+import './index.css';
 
 const modalRoot = document.createElement('div');
 modalRoot.id = 'modal-root';
 document.body.appendChild(modalRoot);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
   <ThemeProvider theme={theme}>
     <Global styles={GlobalStyles} />
     <Provider store={store}>
@@ -25,5 +24,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </PersistGate>
     </Provider>
   </ThemeProvider>
-  
 );

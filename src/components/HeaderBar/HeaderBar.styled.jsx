@@ -36,7 +36,6 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: #ffffff;
   margin-left: 10px;
-
   transition: transform 250ms linear;
 
   &:hover {

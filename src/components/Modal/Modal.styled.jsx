@@ -17,25 +17,18 @@ export const Backdrop = styled.div`
 
 export const ModalBlock = styled.div`
   background-color: white;
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 100%;
   max-width: 335px;
-
   min-height: 225px;
   max-height: 80%;
-
   padding: 40px;
-
   border-radius: 24px;
-
   display: flex;
   flex-direction: column;
-
   overflow-y: auto;
 
   ::-webkit-scrollbar {
@@ -91,9 +84,7 @@ export const Wrapper = styled.div`
   border-radius: 14px;
   background: #f3f3f2;
   overflow: hidden;
-
   margin-bottom: 14px;
-
   width: 255px;
   height: 130px;
 
@@ -169,7 +160,6 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
-
   margin-top: 14px;
 `;
 
@@ -180,7 +170,6 @@ export const SubTitle = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 1.42857;
-
   margin-top: 24px;
   margin-bottom: 8px;
 `;
@@ -203,7 +192,6 @@ export const Item = styled.div`
   align-items: center;
   border-radius: 35px;
   background: #f9f9f9;
-
   color: #363535;
   font-family: Montserrat;
   font-size: 12px;
@@ -227,16 +215,13 @@ export const Button = styled.a`
   border-radius: 12px;
   background: #3470ff;
   margin-top: 24px;
-
   text-decoration: none;
-
   color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.42857;
-
   transition: background-color 250ms linear, transform 250ms linear;
 
   &:hover {
